@@ -34,7 +34,6 @@ features[ctools][] = context:context:3
 features[ctools][] = delta:delta:3
 features[delta][] = tryptic
 features[features_api][] = api:1
-features[menu_custom][] = main-menu
 features[menu_links][] = main-menu:assessment-registry
 features[menu_links][] = main-menu:calendar
 features[menu_links][] = main-menu:coordination-hubs
