@@ -17,3 +17,13 @@ function hr_faceted_layout_ctools_plugin_api() {
     return array("version" => "3");
   }
 }
+
+/**
+ * Implements hook_views_default_views_alter().
+ */
+/*function hr_faceted_layout_views_default_views_alter(&$data) {
+  if (isset($data['assessment_registry'])) {
+    $data['assessment_registry']->display['default']->display_options['fields']['field_clusters']['label'] = 'Sectors';
+    $data['assessment_registry']->display['default']->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Sectors';
+  }
+}*/
