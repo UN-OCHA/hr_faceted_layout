@@ -105,25 +105,6 @@ function hr_faceted_layout_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 30,
   );
-  // Exported menu link: main-menu:node/4
-  $menu_links['main-menu:node/4'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/4',
-    'router_path' => 'node/%',
-    'link_title' => 'CODs',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Common Operational Datasets',
-      ),
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 25,
-  );
   // Exported menu link: main-menu:operational-presence
   $menu_links['main-menu:operational-presence'] = array(
     'menu_name' => 'main-menu',
@@ -146,7 +127,6 @@ function hr_faceted_layout_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Assessments Registry');
-  t('CODs');
   t('Calendar');
   t('Contacts');
   t('Coordination Hubs');
