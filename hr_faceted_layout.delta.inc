@@ -74,6 +74,7 @@ function hr_faceted_layout_delta_default_templates() {
         'global.css' => 'global.css',
         'menu.css' => 'menu.css',
         'files_icons.css' => 'files_icons.css',
+        'rowca.css' => 'rowca.css',
         'clusters_hr_info.css' => 0,
         'kiosk_hr_info.css' => 0,
         'www_hr_info.css' => 0,
