@@ -28,6 +28,9 @@ function hr_faceted_layout_features_override_default_overrides() {
   $overrides["views_view.coordination_hubs.display|views_data_export_1|display_options|path"] = 'coordination-hubs.csv';
   $overrides["views_view.coordination_hubs.display|xls|display_options|path"] = 'coordination-hubs.xls';
   $overrides["views_view.coordination_hubs.display|xml|display_options|path"] = 'coordination-hubs.xml';
+  $overrides["views_view.humanitarian_profile.display|page|display_options|path"] = 'humanitarian-profile';
+  $overrides["views_view.humanitarian_profile.display|xls|display_options|path"] = 'humanitarian-profile.xls';
+  $overrides["views_view.humanitarian_profile.display|xml|display_options|path"] = 'humanitarian-profile.xml';
 
  return $overrides;
 }
