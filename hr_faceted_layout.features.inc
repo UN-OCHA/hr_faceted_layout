@@ -9,6 +9,10 @@
  */
 function hr_faceted_layout_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "boxes" && $api == "box") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
@@ -21,9 +25,29 @@ function hr_faceted_layout_ctools_plugin_api() {
 /**
  * Implements hook_views_default_views_alter().
  */
-/*function hr_faceted_layout_views_default_views_alter(&$data) {
+function hr_faceted_layout_views_default_views_alter(&$data) {
   if (isset($data['assessment_registry'])) {
-    $data['assessment_registry']->display['default']->display_options['fields']['field_clusters']['label'] = 'Sectors';
-    $data['assessment_registry']->display['default']->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Sectors';
+    $data['assessment_registry']->display['page']->display_options['path'] = 'assessment-registry'; /* WAS: 'resources/assessment-registry' */
+    $data['assessment_registry']->display['views_data_export_1']->display_options['path'] = 'assesment-registry.csv'; /* WAS: 'resources/assesment-registry.csv' */
+    $data['assessment_registry']->display['xls']->display_options['path'] = 'assessment-registry.xls'; /* WAS: 'resources/assessment-registry.xls' */
   }
-}*/
+  if (isset($data['calendar'])) {
+    $data['calendar']->display['feed_1']->display_options['path'] = 'calendar/ical/calendar.ics'; /* WAS: 'coordination/calendar/ical/calendar.ics' */
+    $data['calendar']->display['page_1']->display_options['path'] = 'calendar/month'; /* WAS: 'coordination/calendar/month' */
+    $data['calendar']->display['page_2']->display_options['path'] = 'calendar/week'; /* WAS: 'coordination/calendar/week' */
+    $data['calendar']->display['page_3']->display_options['path'] = 'calendar/day'; /* WAS: 'coordination/calendar/day' */
+    $data['calendar']->display['page']->display_options['path'] = 'calendar/year'; /* WAS: 'coordination/calendar/year' */
+  }
+  if (isset($data['contacts'])) {
+    $data['contacts']->display['page_1']->display_options['path'] = 'operational-presence'; /* WAS: 'coordination/operational-presence' */
+    $data['contacts']->display['views_data_export_1']->display_options['path'] = 'operational-presence.xls'; /* WAS: 'coordination/operational-presence.xls' */
+    $data['contacts']->display['views_data_export_2']->display_options['path'] = 'operational-presence.xml'; /* WAS: 'coordination/operational-presence.xml' */
+    unset($data['contacts']->display['block_2']->display_options['filters']['uuid']['vocabulary']);
+  }
+  if (isset($data['coordination_hubs'])) {
+    $data['coordination_hubs']->display['page']->display_options['path'] = 'coordination-hubs'; /* WAS: 'coordination/coordination-hubs' */
+    $data['coordination_hubs']->display['views_data_export_1']->display_options['path'] = 'coordination-hubs.csv'; /* WAS: 'coordination/coordination-hubs.csv' */
+    $data['coordination_hubs']->display['xls']->display_options['path'] = 'coordination-hubs.xls'; /* WAS: 'coordination/coordination-hubs.xls' */
+    $data['coordination_hubs']->display['xml']->display_options['path'] = 'coordination-hubs.xml'; /* WAS: 'coordination/coordination-hubs.xml' */
+  }
+}
