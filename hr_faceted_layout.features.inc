@@ -55,6 +55,8 @@ function hr_faceted_layout_views_default_views_alter(&$data) {
     $data['documents']->display['documents_home_feat']->display_options['link_url'] = 'search/type/document'; /* WAS: '' */
     $data['documents']->display['documents_home_key']->display_options['link_display'] = 'custom_url'; /* WAS: 'key' */
     $data['documents']->display['documents_home_key']->display_options['link_url'] = 'search/type/document'; /* WAS: '' */
+    $data['documents']->display['block_per_term']->display_options['link_display'] = 'custom_url'; /* WAS: 'documents_per_term' */
+    $data['documents']->display['block_per_term']->display_options['link_url'] = 'search/type/document/!2/!1'; /* WAS: '' */
   }
   if (isset($data['humanitarian_profile'])) {
     $data['humanitarian_profile']->display['page']->display_options['path'] = 'humanitarian-profile'; /* WAS: 'visuals-data/humanitarian-profile' */
