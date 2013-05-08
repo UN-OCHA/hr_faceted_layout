@@ -30,6 +30,8 @@ function hr_faceted_layout_features_override_default_overrides() {
   $overrides["views_view.coordination_hubs.display|xml|display_options|path"] = 'coordination-hubs.xml';
   $overrides["views_view.documents.display|documents_home_feat|display_options|link_display"] = 'custom_url';
   $overrides["views_view.documents.display|documents_home_feat|display_options|link_url"] = 'search/type/document';
+  $overrides["views_view.documents.display|documents_home_key|display_options|link_display"] = 'custom_url';
+  $overrides["views_view.documents.display|documents_home_key|display_options|link_url"] = 'search/type/document';
   $overrides["views_view.humanitarian_profile.display|page|display_options|path"] = 'humanitarian-profile';
   $overrides["views_view.humanitarian_profile.display|xls|display_options|path"] = 'humanitarian-profile.xls';
   $overrides["views_view.humanitarian_profile.display|xml|display_options|path"] = 'humanitarian-profile.xml';
