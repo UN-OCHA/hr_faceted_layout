@@ -91,17 +91,11 @@ function hr_faceted_layout_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-maps_view-block_2' => array(
+        'views-maps_view-visuals_home' => array(
           'module' => 'views',
-          'delta' => 'maps_view-block_2',
+          'delta' => 'maps_view-visuals_home',
           'region' => 'content',
           'weight' => '5',
-        ),
-        'views-clusters-block' => array(
-          'module' => 'views',
-          'delta' => 'clusters-block',
-          'region' => 'sidebar_first',
-          'weight' => '0',
         ),
         'delta_blocks-site-slogan' => array(
           'module' => 'delta_blocks',
@@ -109,17 +103,23 @@ function hr_faceted_layout_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-5',
         ),
-        'views-documents-funding_featured' => array(
+        'views-clusters-block' => array(
           'module' => 'views',
-          'delta' => 'documents-funding_featured',
-          'region' => 'sidebar_second',
+          'delta' => 'clusters-block',
+          'region' => 'sidebar_first',
           'weight' => '0',
         ),
-        'views-documents-cluster_key' => array(
+        'views-documents-documents_home_key' => array(
           'module' => 'views',
-          'delta' => 'documents-cluster_key',
+          'delta' => 'documents-documents_home_key',
           'region' => 'sidebar_second',
           'weight' => '5',
+        ),
+        'views-documents-documents_home_feat' => array(
+          'module' => 'views',
+          'delta' => 'documents-documents_home_feat',
+          'region' => 'sidebar_second',
+          'weight' => '0',
         ),
       ),
     ),
