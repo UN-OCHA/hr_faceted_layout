@@ -38,12 +38,6 @@ function hr_faceted_layout_views_default_views_alter(&$data) {
     $data['calendar']->display['page_3']->display_options['path'] = 'calendar/day'; /* WAS: 'coordination/calendar/day' */
     $data['calendar']->display['page']->display_options['path'] = 'calendar/year'; /* WAS: 'coordination/calendar/year' */
   }
-  if (isset($data['contacts'])) {
-    $data['contacts']->display['page_1']->display_options['path'] = 'operational-presence'; /* WAS: 'coordination/operational-presence' */
-    $data['contacts']->display['views_data_export_1']->display_options['path'] = 'operational-presence.xls'; /* WAS: 'coordination/operational-presence.xls' */
-    $data['contacts']->display['views_data_export_2']->display_options['path'] = 'operational-presence.xml'; /* WAS: 'coordination/operational-presence.xml' */
-    unset($data['contacts']->display['block_2']->display_options['filters']['uuid']['vocabulary']);
-  }
   if (isset($data['coordination_hubs'])) {
     $data['coordination_hubs']->display['page']->display_options['path'] = 'coordination-hubs'; /* WAS: 'coordination/coordination-hubs' */
     $data['coordination_hubs']->display['views_data_export_1']->display_options['path'] = 'coordination-hubs.csv'; /* WAS: 'coordination/coordination-hubs.csv' */

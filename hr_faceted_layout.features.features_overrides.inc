@@ -20,10 +20,6 @@ function hr_faceted_layout_features_override_default_overrides() {
   $overrides["views_view.calendar.display|page_2|display_options|path"] = 'calendar/week';
   $overrides["views_view.calendar.display|page_3|display_options|path"] = 'calendar/day';
   $overrides["views_view.calendar.display|page|display_options|path"] = 'calendar/year';
-  $overrides["views_view.contacts.display|block_2|display_options|filters|uuid|vocabulary"]["DELETED"] = TRUE;
-  $overrides["views_view.contacts.display|page_1|display_options|path"] = 'operational-presence';
-  $overrides["views_view.contacts.display|views_data_export_1|display_options|path"] = 'operational-presence.xls';
-  $overrides["views_view.contacts.display|views_data_export_2|display_options|path"] = 'operational-presence.xml';
   $overrides["views_view.coordination_hubs.display|page|display_options|path"] = 'coordination-hubs';
   $overrides["views_view.coordination_hubs.display|views_data_export_1|display_options|path"] = 'coordination-hubs.csv';
   $overrides["views_view.coordination_hubs.display|xls|display_options|path"] = 'coordination-hubs.xls';
