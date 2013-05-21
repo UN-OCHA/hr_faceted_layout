@@ -97,12 +97,6 @@ function hr_faceted_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '5',
         ),
-        'delta_blocks-site-slogan' => array(
-          'module' => 'delta_blocks',
-          'delta' => 'site-slogan',
-          'region' => 'sidebar_first',
-          'weight' => '-5',
-        ),
         'views-clusters-block' => array(
           'module' => 'views',
           'delta' => 'clusters-block',
