@@ -78,6 +78,7 @@ features[menu_links][] = main-menu:coordination-hubs
 features[menu_links][] = main-menu:humanitarian-profile
 features[menu_links][] = main-menu:media-center/galleries
 features[menu_links][] = main-menu:operational-presence
+features[user_permission][] = administer contexts
 features_exclude[features_overrides][views_view.documents.display|documents_home_key|display_options|link_display] = views_view.documents.display|documents_home_key|display_options|link_display
 features_exclude[features_overrides][views_view.documents.display|documents_home_key|display_options|link_url] = views_view.documents.display|documents_home_key|display_options|link_url
 features_exclude[menu_custom][main-menu] = main-menu
