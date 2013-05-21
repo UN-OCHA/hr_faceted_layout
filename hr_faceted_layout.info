@@ -5,6 +5,7 @@ package = Humanitarianresponse
 php = 5.2.4
 dependencies[] = context
 dependencies[] = context_local_tasks
+dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = delta
 dependencies[] = delta_blocks
