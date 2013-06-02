@@ -10,6 +10,24 @@
 function hr_faceted_layout_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu:<front>
+  $menu_links['main-menu:<front>'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '<front>',
+    'router_path' => '',
+    'link_title' => 'Home',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -5,
+  );
   // Exported menu link: main-menu:assessment-registry
   $menu_links['main-menu:assessment-registry'] = array(
     'menu_name' => 'main-menu',
@@ -105,31 +123,12 @@ function hr_faceted_layout_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 30,
   );
-  // Exported menu link: main-menu:operational-presence
-  $menu_links['main-menu:operational-presence'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'operational-presence',
-    'router_path' => 'operational-presence',
-    'link_title' => 'Contacts',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Operational Presence',
-      ),
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 5,
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Assessments Registry');
   t('Calendar');
-  t('Contacts');
   t('Coordination Hubs');
+  t('Home');
   t('Humanitarian Profile');
   t('Media');
 
