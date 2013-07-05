@@ -28,25 +28,6 @@ function hr_faceted_layout_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -5,
   );
-  // Exported menu link: main-menu:assessment-registry
-  $menu_links['main-menu:assessment-registry'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'assessment-registry',
-    'router_path' => 'assessment-registry',
-    'link_title' => 'Assessments Registry',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Assessments Registry',
-      ),
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 15,
-  );
   // Exported menu link: main-menu:calendar
   $menu_links['main-menu:calendar'] = array(
     'menu_name' => 'main-menu',
