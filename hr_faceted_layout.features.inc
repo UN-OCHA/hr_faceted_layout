@@ -26,11 +26,6 @@ function hr_faceted_layout_ctools_plugin_api() {
  * Implements hook_views_default_views_alter().
  */
 function hr_faceted_layout_views_default_views_alter(&$data) {
-  if (isset($data['assessment_registry'])) {
-    $data['assessment_registry']->display['page']->display_options['path'] = 'assessment-registry'; /* WAS: 'resources/assessment-registry' */
-    $data['assessment_registry']->display['views_data_export_1']->display_options['path'] = 'assesment-registry.csv'; /* WAS: 'resources/assesment-registry.csv' */
-    $data['assessment_registry']->display['xls']->display_options['path'] = 'assessment-registry.xls'; /* WAS: 'resources/assessment-registry.xls' */
-  }
   if (isset($data['calendar'])) {
     $data['calendar']->display['feed_1']->display_options['path'] = 'calendar/ical/calendar.ics'; /* WAS: 'coordination/calendar/ical/calendar.ics' */
     $data['calendar']->display['page_1']->display_options['path'] = 'calendar/month'; /* WAS: 'coordination/calendar/month' */

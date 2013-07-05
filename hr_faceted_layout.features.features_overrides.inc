@@ -12,9 +12,6 @@ function hr_faceted_layout_features_override_default_overrides() {
   $overrides = array();
 
   // Exported overrides for: views_view
-  $overrides["views_view.assessment_registry.display|page|display_options|path"] = 'assessment-registry';
-  $overrides["views_view.assessment_registry.display|views_data_export_1|display_options|path"] = 'assesment-registry.csv';
-  $overrides["views_view.assessment_registry.display|xls|display_options|path"] = 'assessment-registry.xls';
   $overrides["views_view.calendar.display|feed_1|display_options|path"] = 'calendar/ical/calendar.ics';
   $overrides["views_view.calendar.display|page_1|display_options|path"] = 'calendar/month';
   $overrides["views_view.calendar.display|page_2|display_options|path"] = 'calendar/week';
