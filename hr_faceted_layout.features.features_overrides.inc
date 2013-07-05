@@ -17,13 +17,6 @@ function hr_faceted_layout_features_override_default_overrides() {
   $overrides["views_view.calendar.display|page_2|display_options|path"] = 'calendar/week';
   $overrides["views_view.calendar.display|page_3|display_options|path"] = 'calendar/day';
   $overrides["views_view.calendar.display|page|display_options|path"] = 'calendar/year';
-  $overrides["views_view.coordination_hubs.display|page|display_options|path"] = 'coordination-hubs';
-  $overrides["views_view.coordination_hubs.display|views_data_export_1|display_options|path"] = 'coordination-hubs.csv';
-  $overrides["views_view.coordination_hubs.display|xls|display_options|path"] = 'coordination-hubs.xls';
-  $overrides["views_view.coordination_hubs.display|xml|display_options|path"] = 'coordination-hubs.xml';
-  $overrides["views_view.humanitarian_profile.display|page|display_options|path"] = 'humanitarian-profile';
-  $overrides["views_view.humanitarian_profile.display|xls|display_options|path"] = 'humanitarian-profile.xls';
-  $overrides["views_view.humanitarian_profile.display|xml|display_options|path"] = 'humanitarian-profile.xml';
   $overrides["views_view.maps_view.display|visuals_home|display_options|defaults|link_display"] = FALSE;
   $overrides["views_view.maps_view.display|visuals_home|display_options|link_display"] = 'custom_url';
   $overrides["views_view.maps_view.display|visuals_home|display_options|link_url"] = 'search/type/map';

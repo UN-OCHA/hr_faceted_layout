@@ -33,12 +33,6 @@ function hr_faceted_layout_views_default_views_alter(&$data) {
     $data['calendar']->display['page_3']->display_options['path'] = 'calendar/day'; /* WAS: 'coordination/calendar/day' */
     $data['calendar']->display['page']->display_options['path'] = 'calendar/year'; /* WAS: 'coordination/calendar/year' */
   }
-  if (isset($data['coordination_hubs'])) {
-    $data['coordination_hubs']->display['page']->display_options['path'] = 'coordination-hubs'; /* WAS: 'coordination/coordination-hubs' */
-    $data['coordination_hubs']->display['views_data_export_1']->display_options['path'] = 'coordination-hubs.csv'; /* WAS: 'coordination/coordination-hubs.csv' */
-    $data['coordination_hubs']->display['xls']->display_options['path'] = 'coordination-hubs.xls'; /* WAS: 'coordination/coordination-hubs.xls' */
-    $data['coordination_hubs']->display['xml']->display_options['path'] = 'coordination-hubs.xml'; /* WAS: 'coordination/coordination-hubs.xml' */
-  }
   if (isset($data['maps_view'])) {
     $data['maps_view']->display['visuals_home']->display_options['defaults']['link_display'] = FALSE; /* WAS: '' */
     $data['maps_view']->display['visuals_home']->display_options['link_display'] = 'custom_url'; /* WAS: '' */
