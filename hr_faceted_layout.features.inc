@@ -39,11 +39,6 @@ function hr_faceted_layout_views_default_views_alter(&$data) {
     $data['coordination_hubs']->display['xls']->display_options['path'] = 'coordination-hubs.xls'; /* WAS: 'coordination/coordination-hubs.xls' */
     $data['coordination_hubs']->display['xml']->display_options['path'] = 'coordination-hubs.xml'; /* WAS: 'coordination/coordination-hubs.xml' */
   }
-  if (isset($data['humanitarian_profile'])) {
-    $data['humanitarian_profile']->display['page']->display_options['path'] = 'humanitarian-profile'; /* WAS: 'visuals-data/humanitarian-profile' */
-    $data['humanitarian_profile']->display['xls']->display_options['path'] = 'humanitarian-profile.xls'; /* WAS: 'visuals-data/humanitarian-profile.xls' */
-    $data['humanitarian_profile']->display['xml']->display_options['path'] = 'humanitarian-profile.xml'; /* WAS: 'visuals-data/humanitarian-profile.xml' */
-  }
   if (isset($data['maps_view'])) {
     $data['maps_view']->display['visuals_home']->display_options['defaults']['link_display'] = FALSE; /* WAS: '' */
     $data['maps_view']->display['visuals_home']->display_options['link_display'] = 'custom_url'; /* WAS: '' */

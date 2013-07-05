@@ -66,25 +66,6 @@ function hr_faceted_layout_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 10,
   );
-  // Exported menu link: main-menu:humanitarian-profile
-  $menu_links['main-menu:humanitarian-profile'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'humanitarian-profile',
-    'router_path' => 'humanitarian-profile',
-    'link_title' => 'Humanitarian Profile',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Humanitarian Profile',
-      ),
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 20,
-  );
   // Exported menu link: main-menu:media-center/galleries
   $menu_links['main-menu:media-center/galleries'] = array(
     'menu_name' => 'main-menu',
@@ -142,12 +123,10 @@ function hr_faceted_layout_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Assessments Registry');
   t('Calendar');
   t('Coordination Hubs');
   t('Documents');
   t('Home');
-  t('Humanitarian Profile');
   t('Media');
   t('Search');
 
