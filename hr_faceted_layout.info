@@ -18,7 +18,6 @@ dependencies[] = hr_login
 dependencies[] = hr_theme
 dependencies[] = humanitarianresponse_coordination
 dependencies[] = humanitarianresponse_documents
-dependencies[] = humanitarianresponse_events
 dependencies[] = humanitarianresponse_highlight
 dependencies[] = humanitarianresponse_links
 dependencies[] = humanitarianresponse_maps
