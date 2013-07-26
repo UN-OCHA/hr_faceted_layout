@@ -21,14 +21,3 @@ function hr_faceted_layout_ctools_plugin_api() {
     return array("version" => "3");
   }
 }
-
-/**
- * Implements hook_views_default_views_alter().
- */
-function hr_faceted_layout_views_default_views_alter(&$data) {
-  if (isset($data['maps_view'])) {
-    $data['maps_view']->display['visuals_home']->display_options['defaults']['link_display'] = FALSE; /* WAS: '' */
-    $data['maps_view']->display['visuals_home']->display_options['link_display'] = 'custom_url'; /* WAS: '' */
-    $data['maps_view']->display['visuals_home']->display_options['link_url'] = 'search/type/map'; /* WAS: '' */
-  }
-}

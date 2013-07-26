@@ -104,7 +104,6 @@ function hr_faceted_layout_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Calendar');
   t('Coordination Hubs');
   t('Documents');
   t('Home');
