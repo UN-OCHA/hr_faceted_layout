@@ -28,25 +28,6 @@ function hr_faceted_layout_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -5,
   );
-  // Exported menu link: main-menu:calendar
-  $menu_links['main-menu:calendar'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'calendar',
-    'router_path' => 'calendar',
-    'link_title' => 'Calendar',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Calendar',
-      ),
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-  );
   // Exported menu link: main-menu:coordination-hubs
   $menu_links['main-menu:coordination-hubs'] = array(
     'menu_name' => 'main-menu',
