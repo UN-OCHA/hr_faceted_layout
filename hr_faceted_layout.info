@@ -4,6 +4,7 @@ core = 7.x
 package = Humanitarianresponse
 php = 5.2.4
 dependencies[] = context
+dependencies[] = context_block_disable
 dependencies[] = context_local_tasks
 dependencies[] = context_ui
 dependencies[] = ctools
@@ -45,7 +46,6 @@ features[menu_links][] = main-menu:search
 features[menu_links][] = main-menu:search/type/document
 features[user_permission][] = administer contexts
 features_exclude[menu_custom][main-menu] = main-menu
-
 l10n path = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/%core/%project/%project-%release.%language.po
 l10n server = localize.humanitarianresponse.info
 l10n url = http://localize.humanitarianresponse.info/sites/localize.humanitarianresponse.info/files/l10n_packager/l10n_server.xml

@@ -35,17 +35,17 @@ function hr_faceted_layout_context_default_contexts() {
           'region' => 'content',
           'weight' => '5',
         ),
-        'views-clusters-block' => array(
-          'module' => 'views',
-          'delta' => 'clusters-block',
-          'region' => 'sidebar_first',
-          'weight' => '0',
-        ),
         'delta_blocks-page-title' => array(
           'module' => 'delta_blocks',
           'delta' => 'page-title',
           'region' => 'sidebar_first',
           'weight' => '-5',
+        ),
+        'views-clusters-block' => array(
+          'module' => 'views',
+          'delta' => 'clusters-block',
+          'region' => 'sidebar_first',
+          'weight' => '0',
         ),
         'views-documents-funding_featured' => array(
           'module' => 'views',
@@ -58,6 +58,13 @@ function hr_faceted_layout_context_default_contexts() {
           'delta' => 'documents-cluster_key',
           'region' => 'sidebar_second',
           'weight' => '5',
+        ),
+      ),
+    ),
+    'block_disable' => array(
+      'blocks' => array(
+        'system' => array(
+          'system-main' => 'system-main',
         ),
       ),
     ),
@@ -103,17 +110,24 @@ function hr_faceted_layout_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '0',
         ),
+        'views-documents-documents_home_feat' => array(
+          'module' => 'views',
+          'delta' => 'documents-documents_home_feat',
+          'region' => 'sidebar_second',
+          'weight' => '0',
+        ),
         'views-documents-documents_home_key' => array(
           'module' => 'views',
           'delta' => 'documents-documents_home_key',
           'region' => 'sidebar_second',
           'weight' => '5',
         ),
-        'views-documents-documents_home_feat' => array(
-          'module' => 'views',
-          'delta' => 'documents-documents_home_feat',
-          'region' => 'sidebar_second',
-          'weight' => '0',
+      ),
+    ),
+    'block_disable' => array(
+      'blocks' => array(
+        'system' => array(
+          'system-main' => 'system-main',
         ),
       ),
     ),
@@ -179,6 +193,13 @@ function hr_faceted_layout_context_default_contexts() {
           'delta' => 'documents-cluster_key',
           'region' => 'sidebar_second',
           'weight' => '5',
+        ),
+      ),
+    ),
+    'block_disable' => array(
+      'blocks' => array(
+        'system' => array(
+          'system-main' => 'system-main',
         ),
       ),
     ),
